@@ -1,0 +1,27 @@
+.city {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px;
+  background: linear-gradient(white 10%, cornflowerblue);
+  border-radius: 20px;
+  width: 600px;
+  height: 60px;
+}
+
+.input {
+  background-color: white;
+  border: 6px double darkorange;
+  width: 300px;
+  padding: 10px;
+  font-size: 1em;
+  color: darkmagenta;
+}
+.label {
+  background-color: white;
+  border: 6px double darkorange;
+  width: 150px;
+  padding: 10px;
+  font-size: 1em;
+  color: darkmagenta;
+}

@@ -1,0 +1,9 @@
+.weather-card{
+    margin:20px;
+    background: 
+    linear-gradient(#f574f1, #04abf3) ;
+    width:600px;
+    height:600px;
+    padding:20px;
+    color:black;
+}
