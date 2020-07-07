@@ -9,12 +9,17 @@ function App() {
   };
   const [query, setQuery] = useState(initialState);
   const [data, setData] = useState({});
+
   const onChange = (event) => {
     setQuery({ ...query, [event.target.id]: event.target.value });
   };
+  const onClick = (event) => {
+    event.preventDefault();
+    setData(`${data.main.temp}`);
+  };
   const onSubmit = (event) => {
     event.preventDefault();
-    setData({ ...data, city: query.city,icon:query.icon,loading: true });
+    setData({ ...data, city: query.city, loading: true });
     fetch(
       `${window.location.protocol}//api.openweathermap.org/data/2.5/weather?q=${query.city}&appid=${API_KEY}&units=${query.units}`
     ).then((res) => {
@@ -27,7 +32,6 @@ function App() {
           ...data,
           city: query.city,
           weatherData,
-          icon: query.icon,
           loading: false,
           error: null,
         });
@@ -59,7 +63,12 @@ function App() {
         </button>
       </Form>
       {data.weatherData && (
-        <SingleWeatherCard city={query.city} icon={query.icon} data={data.weatherData} />
+        <SingleWeatherCard
+          city={query.city}
+          data={data.weatherData}
+          onClick={onClick}
+          
+        />
       )}
       {data.error && <div>{JSON.stringify(data.error)}</div>}
     </div>
