@@ -52,7 +52,7 @@ function App() {
       <Form onSubmit={onSubmit}>
         <Input
           id="city"
-          label="Choose a City"
+          label="Choose City"
           onChange={onChange}
           placeholder="Insert the city name here"
           type="text"
