@@ -1,6 +1,8 @@
 import React from "react";
 import "./SingleWeatherCard.css";
 
+
+
 const SingleWeatherCard = ({ city, data, onClick }) => (
   <>
     <div className="weather-card">
