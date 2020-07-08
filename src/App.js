@@ -67,7 +67,6 @@ function App() {
           city={query.city}
           data={data.weatherData}
           onClick={onClick}
-          
         />
       )}
       {data.error && <div>{JSON.stringify(data.error)}</div>}
