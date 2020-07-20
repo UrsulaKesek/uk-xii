@@ -33,7 +33,6 @@ const SingleWeatherCard = ({ city, data, onClick }) => (
       <button className="F" onClick={onClick}>
         F
       </button>
-      <Toggle/>
 
       <h5>{data.main.humidity ? `Humidity:${data.main.humidity}` : ""}</h5>
       <h4>
