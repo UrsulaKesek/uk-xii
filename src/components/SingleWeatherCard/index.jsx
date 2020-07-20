@@ -1,5 +1,6 @@
 import React from "react";
 import "./SingleWeatherCard.css";
+import Toggle from "../Toggle";
 
 const SingleWeatherCard = ({ city, data, onClick }) => (
   <>
@@ -32,6 +33,7 @@ const SingleWeatherCard = ({ city, data, onClick }) => (
       <button className="F" onClick={onClick}>
         F
       </button>
+      <Toggle/>
 
       <h5>{data.main.humidity ? `Humidity:${data.main.humidity}` : ""}</h5>
       <h4>
@@ -41,13 +43,13 @@ const SingleWeatherCard = ({ city, data, onClick }) => (
       </h4>
       <div>
         {/* <h2>{data.weather[0].icon ? `${data.weather[0].icon}` : ""}</h2> */}
-        <h2>
+        <h1>
           <img
             alt="weather-icon"
             className="icons"
             src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`}
           />
-        </h2>
+        </h1>
         <h5>
           {data.weather[0].description
             ? `What's it like out there:${data.weather[0].description}`
