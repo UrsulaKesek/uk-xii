@@ -1,6 +1,5 @@
 import React from "react";
 import "./SingleWeatherCard.css";
-import Toggle from "../Toggle";
 
 const SingleWeatherCard = ({ city, data, onClick }) => (
   <>
