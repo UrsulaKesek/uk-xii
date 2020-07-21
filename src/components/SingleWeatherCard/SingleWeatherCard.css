@@ -1,23 +1,36 @@
-.weather-card{
-    margin:20px;
-    background: 
-    linear-gradient(#f574f1, #04abf3) ;
-    width:600px;
-    height:600px;
-    padding:20px;
-    color:black;
+.weather-card {
+  background: linear-gradient(#f574f1, #04abf3);
+  width: 1000px;
+  height: 400px;
+  color: black;
 }
-.C,.F{
- margin:30px;
-width:50px;
-height:50px;
-background-color: rgb(34, 12, 1);
-color:white;
+.icons {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color:rgb(5, 110, 31);
+  color: white;
 }
-.temp{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
+img.icon {
+  width: 100px;
+  height: 100px;
+  background-color: deepskyblue;
+}
+.minmaxhum{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.radios{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width:400px;
+  height:150px;
+}
+.temp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }

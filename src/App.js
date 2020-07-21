@@ -58,7 +58,7 @@ function App() {
           type="text"
           city={query.city}
         />
-        <button disabled={data.loading || !query.city}>
+        <button className="search" disabled={data.loading || !query.city}>
           {data.loading ? "Loading..." : "Search!"}
         </button>
       </Form>
