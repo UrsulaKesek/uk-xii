@@ -34,3 +34,17 @@ img.icon {
   flex-direction: row;
   justify-content: space-evenly;
 }
+<<<<<<< HEAD
+=======
+.temp{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.icons{
+    width:100px;
+    height:100px;
+}
+>>>>>>> 37b55071e5b839740f50330a0545e332e278c9ba

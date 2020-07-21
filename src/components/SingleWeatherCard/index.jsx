@@ -58,8 +58,13 @@ const SingleWeatherCard = ({ city, data, unit, onClick, onChange }) => (
           ? `Chances of rain in ${city}:${(data.rain["1h"] * 100).toFixed(0)}%`
           : `Chances of rain in ${city} is 0%`}
       </h4>
+<<<<<<< HEAD
       <div className="icons">
         <h3>Weather Icon</h3>
+=======
+      <div>
+        {/* <h2>{data.weather[0].icon ? `${data.weather[0].icon}` : ""}</h2> */}
+>>>>>>> 37b55071e5b839740f50330a0545e332e278c9ba
         <h1>
           <img
             alt="weather-icon"
