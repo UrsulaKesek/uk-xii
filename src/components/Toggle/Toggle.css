@@ -13,7 +13,7 @@
     justify-content: space-between;
     cursor: pointer;
     width: 150px;
-    height: 55px;
+    height: 60px;
     background:black;
     border-radius: 100px;
     position: relative;
@@ -23,18 +23,27 @@
   .toggle-label .toggle-button {
     content: "";
     position: absolute;
-    top: 4px;
-    left: 3px;
+    top: 2px;
+    left: 2px;
     width: 45px;
     height: 45px;
     border-radius: 45px;
     transition: 0.2s;
-    background:paleturquoise;
-    box-shadow: 3px 3px 3px 0 rgba(10, 10, 10, 0.75);
-  }
+    border: 6px double black;
+    background-color: rgb(9, 228, 252);
+    background-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.1) 30%,
+      rgba(62, 11, 244, 0.7)
+    );
+    box-shadow: inset 4px 4px 4px rgba(255, 255, 255, 0.6),
+      inset -4px -4px 3px rgba(0, 0, 0, 0.6);
+    outline: none;
+    }
   
   .toggle-checkbox:checked + .toggle-label .toggle-button {
-    left: calc(100% - 4px);
+    left: calc(100% - 1px);
     transform: translateX(-100%);
   }
   

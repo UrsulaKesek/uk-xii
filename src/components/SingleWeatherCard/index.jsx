@@ -3,7 +3,7 @@ import "./SingleWeatherCard.css";
 import Toggle from "../Toggle";
 
 function SingleWeatherCard({ city, data }) {
-  const [temp, setTemp] = useState("0");
+  const [metric, setMetric] = useState("");
   return (
     <div className="weather-card">
       <div className="temp">
@@ -14,11 +14,11 @@ function SingleWeatherCard({ city, data }) {
               ? `${((data.main.temp - 273.15) * 1.8 + 32).toFixed(0)} ° F`
               : ""}
           </h4>
-          <Toggle
-            isOn={temp}
+          <Toggle className="toggle"
+            isOn={metric}
             onColor="white"
-            handleToggle={() => setTemp(!temp)}
-          />
+            handleToggle={() => setMetric(!metric)}
+             />
           <h4 className="cel">
             {data.main.temp
               ? `${(data.main.temp - 273.15).toFixed(0)} ° C`

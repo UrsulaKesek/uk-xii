@@ -8,21 +8,21 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.search{
-  width:100px;
+.search {
+  width: 100px;
   line-height: 2.5;
   font-size: 1rem;
   text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
+  color: black;
+  text-shadow: 1px 1px 1px black;
   border-radius: 20px;
   border: 6px double black;
-  background-color: rgb(252, 9, 244);
+  background-color: rgb(9, 228, 252);
   background-image: linear-gradient(
     to top left,
     rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0.1) 30%,
-    rgba(241, 33, 10, 0.7)
+    rgba(62, 11, 244, 0.7)
   );
   box-shadow: inset 4px 4px 4px rgba(255, 255, 255, 0.6),
     inset -4px -4px 3px rgba(0, 0, 0, 0.6);
