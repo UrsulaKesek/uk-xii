@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import { Input, Form, SingleWeatherCard } from "./components";
 import { API_KEY } from "./constants";
+  
 
 function App() {
   const initialState = {
@@ -40,7 +41,7 @@ function App() {
   };
   return (
     <div className="app">
-      <h1>
+      <h2>
         <span className="stormy" aria-label="weather-app" role="img">
           ⛈️
         </span>
@@ -48,7 +49,7 @@ function App() {
         <span className="stormy1" aria-label="weather-app" role="img">
           ⛈️
         </span>
-      </h1>
+      </h2>
       <Form onSubmit={onSubmit}>
         <Input
           id="city"

@@ -3,9 +3,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color:#f574f1;
+    background-color:#f50eee;
+    box-shadow:5px 5px 5px 5px black ;
     border-radius: 30px;
     padding:20px;
     width:660px;
-    height:190px;
+    height:130px;
+    z-index:1;
 }

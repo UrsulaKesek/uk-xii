@@ -1,15 +1,20 @@
+.cel{
+  color:white;
+}
+
 .weather-card {
-  background: linear-gradient(#f574f1, #04abf3);
-  width: 1000px;
+  background: linear-gradient(#f013e9, #04abf3);
+  width: 650px;
   height: 400px;
   color: black;
+  box-shadow:5px black; 
 }
 .icons {
-  width: 1000px;
+  width: 650px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color:rgb(5, 110, 31);
+  background-color:black;
   color: white;
 }
 img.icon {
@@ -17,31 +22,28 @@ img.icon {
   height: 100px;
   background-color: deepskyblue;
 }
-.minmaxhum{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.like {
+  margin: 0 auto;
+  height: 30px;
+  background-color: rgb(5, 110, 31);
+  color: white;
 }
-.radios{
-  display:flex;
+.minmaxhum {
+  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width:400px;
-  height:150px;
+  height:50px;
+}
+.radios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 400px;
+  height: 150px;
 }
 .temp {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-}
-.temp{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-}
-.icons{
-    width:100px;
-    height:100px;
+  height:80px;
 }
