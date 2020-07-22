@@ -3,7 +3,7 @@ import "./SingleWeatherCard.css";
 import Toggle from "../Toggle";
 
 function SingleWeatherCard({ city,data }) {
-  const [temp, setTemp] = useState({});
+  const [value, setValue] = useState(false);
   return (
     <div className="weather-card">
       <div className="temp">
@@ -16,9 +16,9 @@ function SingleWeatherCard({ city,data }) {
           </h4>
           <Toggle
             className="toggle"
-            isOn={temp}
+            isOn={value}
             onColor="white"
-            handleToggle={() => setTemp(!temp)}
+            handleToggle={() => setValue(!value)}
           />
           <h4 className="cel">
             {data.main.temp
