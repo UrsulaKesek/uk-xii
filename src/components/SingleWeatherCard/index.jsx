@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./SingleWeatherCard.css";
 import Toggle from "../Toggle";
 
-function SingleWeatherCard({ city, data }) {
-  const [metric, setMetric] = useState("");
+function SingleWeatherCard({ city,data }) {
+  const [temp, setTemp] = useState({});
   return (
     <div className="weather-card">
       <div className="temp">
@@ -14,11 +14,12 @@ function SingleWeatherCard({ city, data }) {
               ? `${((data.main.temp - 273.15) * 1.8 + 32).toFixed(0)} ° F`
               : ""}
           </h4>
-          <Toggle className="toggle"
-            isOn={metric}
+          <Toggle
+            className="toggle"
+            isOn={temp}
             onColor="white"
-            handleToggle={() => setMetric(!metric)}
-             />
+            handleToggle={() => setTemp(!temp)}
+          />
           <h4 className="cel">
             {data.main.temp
               ? `${(data.main.temp - 273.15).toFixed(0)} ° C`
