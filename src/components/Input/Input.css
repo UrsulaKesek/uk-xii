@@ -22,24 +22,26 @@
   width: 150px;
   padding: 5px;
   font-size: 1em;
-  color:black;
+  color: black;
 }
 @media screen and (max-width: 375px) {
-.city{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width:300px;
-  height:100px;
-  margin:5px;
-}
-.input{
-  margin:15px;
-  width:240px;
-}
-.label{
-  margin:15px;
-  width:100px;
-}
-
+  .city {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(white 10%, cornflowerblue);
+    width: 300px;
+    height: 130px;
+    margin: 5px;
+  }
+  .input {
+    margin: 15px;
+    width: 240px;
+  }
+  label.label {
+    position: relative;
+    top: 10px;
+    left: 15px;
+    width: 100px;
+  }
 }
