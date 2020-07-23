@@ -41,10 +41,10 @@
 @media screen and (max-width: 375px) {
  .search{
    position: relative;
-   top:-135px;
+   bottom:130px;
    left:80px;
    height:50px;
    font-size: 0.75rem;
-
- } 
+   line-height:1.75;
+  } 
 }
