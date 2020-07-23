@@ -37,11 +37,13 @@
   .input {
     margin: 15px;
     width: 240px;
+    height: 50px;
   }
   label.label {
     position: relative;
     top: 10px;
     left: 15px;
     width: 100px;
+    height: 50px;
   }
 }

@@ -52,7 +52,7 @@ img.icon {
 }
 @media screen and (max-width: 375px) {
 .weather-card{
-  width:370px;
+  width:375px;
 
 }
 .temp{
