@@ -28,11 +28,14 @@ img.icon {
   background-color: rgb(5, 110, 31);
   color: white;
 }
-.minmaxhum {
+.minmaxhum,.minmaxf {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  height:50px;
+  height:40px;
+}
+.minmaxhum{
+  color:white;
 }
 .radios {
   display: flex;
@@ -46,4 +49,19 @@ img.icon {
   flex-direction: row;
   justify-content: space-evenly;
   height:80px;
+}
+@media screen and (max-width: 375px) {
+.weather-card{
+  width:370px;
+
+}
+.temp{
+  margin:10px;
+  height:20px;
+}
+.icons{
+  width:370px;
+  position:relative;
+  top:10px;
+}
 }

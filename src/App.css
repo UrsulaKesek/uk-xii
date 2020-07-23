@@ -38,3 +38,10 @@
   left: 50px;
   background-color: darkslateblue;
 }
+@media screen and (max-width: 375px) {
+ .search{
+   position: relative;
+   top:-148px;
+   left:107px;
+ } 
+}

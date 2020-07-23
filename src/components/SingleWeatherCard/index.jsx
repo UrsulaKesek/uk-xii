@@ -32,6 +32,18 @@ function SingleWeatherCard({ city,data }) {
         </h4>
         <h5>{data.main.humidity ? `Humidity:${data.main.humidity}` : ""}</h5>
       </div>
+      <div className="minmaxf">
+        <h4>
+          {data.main.temp_min
+              ? `Min:${((data.main.temp - 273.15) * 1.8 + 32).toFixed(0)} ° F`
+              : ""}
+        </h4>
+        <h4>
+          {data.main.temp_max
+              ? `Max:${((data.main.temp - 273.15) * 1.8 + 32).toFixed(0)} ° F`
+              : ""}
+        </h4>
+      </div>
       <h4>
         {data.rain
           ? `Chances of rain in ${city}:${(data.rain["1h"] * 100).toFixed(0)}%`
