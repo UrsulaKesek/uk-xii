@@ -35,12 +35,12 @@ function SingleWeatherCard({ city,data }) {
       <div className="minmaxf">
         <h4>
           {data.main.temp_min
-              ? `Min:${((data.main.temp - 273.15) * 1.8 + 32).toFixed(0)} ° F`
+              ? `Min:${((data.main.temp_min - 273.15) * 1.8 + 32).toFixed(0)} ° F`
               : ""}
         </h4>
         <h4>
           {data.main.temp_max
-              ? `Max:${((data.main.temp - 273.15) * 1.8 + 32).toFixed(0)} ° F`
+              ? `Max:${((data.main.temp_max - 273.15) * 1.8 + 32).toFixed(0)} ° F`
               : ""}
         </h4>
       </div>
