@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./SingleWeatherCard.css";
-import Toggle from "../Toggle";
 
 function SingleWeatherCard({ city,data }) {
-  const [value, setValue] = useState(false);
   return (
     <div className="weather-card">
       <div className="temp">
@@ -14,12 +12,6 @@ function SingleWeatherCard({ city,data }) {
               ? `${((data.main.temp - 273.15) * 1.8 + 32).toFixed(0)} ° F`
               : ""}
           </h4>
-          <Toggle
-            className="toggle"
-            isOn={value}
-            onColor="white"
-            handleToggle={() => setValue(!value)}
-          />
           <h4 className="cel">
             {data.main.temp
               ? `${(data.main.temp - 273.15).toFixed(0)} ° C`
