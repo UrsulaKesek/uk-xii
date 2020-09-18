@@ -8,26 +8,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-button{
-  width:100px;
-  line-height: 2.5;
-  font-size: 1rem;
-  text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  border-radius: 20px;
-  border: 6px double black;
-  background-color: rgb(243, 82, 8);
-  background-image: linear-gradient(
-    to top left,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2) 30%,
-    rgba(241, 83, 10, 0.7)
-  );
-  box-shadow: inset 4px 4px 4px rgba(255, 255, 255, 0.6),
-    inset -4px -4px 3px rgba(0, 0, 0, 0.6);
-  outline: none;
-}
 .stormy {
   position: relative;
   right: 50px;

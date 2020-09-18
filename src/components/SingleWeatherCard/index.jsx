@@ -15,9 +15,6 @@ const SingleWeatherCard = ({ city, data, onClick }) => (
             : ""}
         </h3>
       </div>
-      <button className="C" onClick={onClick}>
-        C
-      </button>
       <span>
         {data.main.temp_min
           ? ` Min:${(data.main.temp_min - 273.15).toFixed(0)} ° C`
@@ -29,9 +26,6 @@ const SingleWeatherCard = ({ city, data, onClick }) => (
           ? ` Max:${(data.main.temp_max - 273.15).toFixed(0)} ° C`
           : ""}
       </span>
-      <button className="F" onClick={onClick}>
-        F
-      </button>
 
       <h5>{data.main.humidity ? `Humidity:${data.main.humidity}` : ""}</h5>
       <h4>
