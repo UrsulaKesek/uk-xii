@@ -1,7 +1,7 @@
 .app {
   text-align: center;
   background-color: cornflowerblue;
-  min-height: 100vh;
+  height: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,4 +17,14 @@
   position: relative;
   left: 50px;
   background-color: darkslateblue;
+}
+@media screen and (max-width: 375px) {
+ .search{
+   position: relative;
+   bottom:130px;
+   left:80px;
+   height:50px;
+   font-size: 0.75rem;
+   line-height:1.75;
+  } 
 }
